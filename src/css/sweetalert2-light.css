@@ -1,0 +1,55 @@
+.swal2-light {
+  background-color: #fff;
+  color: #252424;
+}
+
+.swal2-light .swal2-title {
+  color: #252424;
+}
+
+.swal2-light .swal2-icon .swal2-icon-content {
+  color: #252424;
+}
+
+.swal2-light .swal2-icon.swal2-warning {
+  border-color: #f8bb86;
+  color: #f8bb86;
+}
+
+.swal2-light .swal2-confirm {
+  background-color: #3085d6;
+  border: none;
+}
+
+.swal2-light .swal2-cancel {
+  background-color: #d33;
+  border: none;
+}
+
+
+.tag-light {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+
+
+.light .ck-editor__editable {
+  background-color: #ffffff; /* Light background color */
+  color: #000000; /* Dark text color */
+}
+
+/* Dark Mode */
+.dark .ck-editor__editable {
+  background-color: #333333; /* Dark background color */
+  color: #ffffff; /* Light text color */
+}
+
+/* Optional: Adjust other CKEditor elements */
+.light .ck-toolbar {
+  background-color: #f0f0f0; /* Light toolbar background */
+}
+
+.dark .ck-toolbar {
+  background-color: #444444; /* Dark toolbar background */
+}

@@ -1,0 +1,258 @@
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-Light.woff2') format('woff2'),
+    url('../fonts/Satoshi-Light.woff') format('woff'),
+    url('../fonts/Satoshi-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+    url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+    url('../fonts/Satoshi-Regular.woff') format('woff'),
+    url('../fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+    url('../fonts/Satoshi-Italic.woff') format('woff'),
+    url('../fonts/Satoshi-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+    url('../fonts/Satoshi-Medium.woff') format('woff'),
+    url('../fonts/Satoshi-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+    url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+    url('../fonts/Satoshi-Bold.woff') format('woff'),
+    url('../fonts/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-Black.woff2') format('woff2'),
+    url('../fonts/Satoshi-Black.woff') format('woff'),
+    url('../fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src:
+    url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+    url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+.no_overflow_width::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no_overflow_width {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.table_no_overflow .TableContainer-root::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.table_no_overflow .TableContainer-root {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.dark .css-1mrv5kl.Title-title {
+  color: white;
+}
+
+.dark
+  .css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active
+  .MuiTableSortLabel-icon {
+  color: white !important;
+}
+
+.dark .css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root:hover {
+  color: white !important;
+}
+
+.dark .css-jtlhu6-MuiTablePagination-root {
+  color: white !important;
+}
+
+.dark .css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon {
+  color: white !important;
+}
+
+
+.dark .MuiTablePagination-root {
+  color: white !important;
+
+}
+.dark .MuiSvgIcon-root {
+  fill: white !important;
+}
+.dark .css-i4bv87-MuiSvgIcon-root {
+  fill: currentColor;
+}
+
+.dark .css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.css-j6j1fo-MuiToolbar-root.Toolbar-toolbar {
+  display: none !important;
+}
+
+.css-1i5hr6i-MuiTableHead-root {
+  background-color: #1c2434 !important;
+  padding: 4px !important;
+  /* text-align: center !important; */
+  /* border-top-left-radius: 10px !important; */
+
+  /* border-radius: 10px !important; */
+  /* color: white !important; */
+}
+
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root {
+  color: white !important;
+}
+
+.css-xhtqz8-MuiTableCell-root {
+  padding: 4px !important;
+}
+
+.ag-root-wrapper-body.ag-layout-normal {
+  height: auto;
+}
+.ag-cell-focus {
+  outline: none;
+  border: none !important;
+}
+
+.ck.ck-content h3.category {
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  font-weight: bold;
+  color: #d1d1d1;
+  letter-spacing: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.ck.ck-content p.info-box {
+  padding: 1.2em 2em;
+  border: 1px solid #e91e63;
+  border-left: 10px solid #e91e63;
+  border-radius: 5px;
+  margin: 1.5em;
+}
+
+.ag-overlay-loading-center {
+  display: none;
+}
+
+/* .no-rows{
+ position: absolute;
+ top: 10%;
+} */
+.product-name-column {
+  width: 300px !important;
+}
+

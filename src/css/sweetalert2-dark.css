@@ -1,0 +1,33 @@
+.swal2-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.swal2-dark .swal2-title {
+  color: #fff;
+}
+
+.swal2-dark .swal2-icon .swal2-icon-content {
+  color: #fff;
+}
+
+.swal2-dark .swal2-icon.swal2-warning {
+  border-color: #f8bb86;
+  color: #f8bb86;
+}
+
+.swal2-dark .swal2-confirm {
+  background-color: #3085d6;
+  border: none;
+}
+
+.swal2-dark .swal2-cancel {
+  background-color: #d33;
+  border: none;
+}
+
+.tag-dark {
+  background-color: #384455;
+  color: #fff;
+}
+
