@@ -61,6 +61,9 @@ import UserBlocked from './pages/User/UserBlockedTable.jsx';
 import Testimonial from './pages/Testimonial/Testimonial.jsx';
 import AddTestimonial from './pages/Testimonial/AddTestimonial.jsx';
 import EditTestimonial from './pages/Testimonial/EditTestimonial.jsx';
+import BackupImport from './pages/BackupImport/BackupImport.jsx';
+import ImageCleaning from './pages/ImageCleaning/ImageCleaning.jsx';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -549,6 +552,24 @@ function App() {
             <>
               <PageTitle title="testimonial | Jasmina " />
               <EditTestimonial />
+            </>
+          }
+        />
+        <Route
+          path="/backup-import"
+          element={
+            <>
+              <PageTitle title="Backup & Import | Jasmina " />
+              <BackupImport />
+            </>
+          }
+        />
+        <Route
+          path="/image-cleaning"
+          element={
+            <>
+              <PageTitle title="Image Cleaning | Jasmina " />
+              <ImageCleaning />
             </>
           }
         />

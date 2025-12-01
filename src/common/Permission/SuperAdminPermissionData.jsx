@@ -28,26 +28,26 @@ export const SuperpermissionData = [
         path: '/role-management',
         actions: {
           update: {
-               id: 313,
+            id: 313,
             title: 'update role',
             description: 'with this permission role can update other role.',
             value: true,
           },
           view: {
-              id: 313,
+            id: 313,
             title: 'view role',
             description: 'with this permission user can see all user.',
             value: true,
           },
           add: {
-               id: 313,
+            id: 313,
             title: 'Create role',
             description:
               "This permission allows role to create new role's in system.",
             value: true,
           },
           remove: {
-                id: 313,
+            id: 313,
             description: 'with this permission role can removw other role.',
             title: 'delete role',
             value: true,
@@ -161,7 +161,7 @@ export const SuperpermissionData = [
           },
         },
       },
-        {
+      {
         id: 4.4,
         text: 'User Blocked',
         path: '/userblocked',
@@ -219,10 +219,10 @@ export const SuperpermissionData = [
             description: 'with this permission user can see all user.',
             value: true,
           },
-            reject: {
+          reject: {
             title: 'reject Company',
             description: 'with this permission user can reject company.',
-         value: true,
+            value: true,
           },
         },
       },
@@ -234,17 +234,17 @@ export const SuperpermissionData = [
           view: {
             title: 'view  Company',
             description: 'with this permission user can see the roles',
-             value: true,
+            value: true,
           },
           approve: {
             title: 'approve Company',
             description: 'with this permission user can approve company.',
-         value: true,
+            value: true,
           },
           reject: {
             title: 'reject Company',
             description: 'with this permission user can reject company.',
-          value: true,
+            value: true,
           },
         },
       },
@@ -265,7 +265,7 @@ export const SuperpermissionData = [
           },
         },
       },
-        {
+      {
         id: 5.5,
         text: 'Company Blocked',
         path: '/companyblocked',
@@ -273,12 +273,12 @@ export const SuperpermissionData = [
           view: {
             title: 'view Blocked Company',
             description: 'with this permission user can see blocked companies.',
-          value: true,
+            value: true,
           },
           approve: {
             title: 'unblock Company',
             description: 'with this permission user can unblock company.',
-          value: true,
+            value: true,
           },
         },
       },
@@ -331,7 +331,7 @@ export const SuperpermissionData = [
           reject: {
             title: 'reject Post',
             description: 'with this permission user can reject post.',
-         value: true,
+            value: true,
           },
         },
       },
@@ -350,10 +350,10 @@ export const SuperpermissionData = [
             description: 'with this permission user can approve post.',
             value: true,
           },
-            reject: {
+          reject: {
             title: 'reject Rejected Post',
             description: 'with this permission user can reject post.',
-         value: true,
+            value: true,
           },
         },
       },
@@ -378,25 +378,25 @@ export const SuperpermissionData = [
     path: '/job',
     subMenuExist: false,
     actions: {
-       view: {
+      view: {
         title: 'view job',
         description: 'with this permission user can see all user.',
-      value: true,
+        value: true,
       },
       add: {
         title: 'add job',
         description: 'with this permission user can add role',
-     value: true,
+        value: true,
       },
       update: {
         title: 'update job',
         description: 'with this permission user can update role',
-     value: true,
+        value: true,
       },
       remove: {
         description: 'with this permission user can remove role',
         title: 'remove job',
-      value: true,
+        value: true,
       },
     },
   },
@@ -407,25 +407,25 @@ export const SuperpermissionData = [
     path: '/subscription',
     subMenuExist: false,
     actions: {
-     view: {
+      view: {
         title: 'view subscription',
         description: 'with this permission user can see all user.',
-      value: true,
+        value: true,
       },
       add: {
         title: 'add subscription',
         description: 'with this permission user can add role',
-      value: true,
+        value: true,
       },
       update: {
         title: 'update subscription',
         description: 'with this permission user can update role',
-     value: true,
+        value: true,
       },
       remove: {
         description: 'with this permission user can remove role',
         title: 'remove subscription',
-      value: true,
+        value: true,
       },
     },
   },
@@ -436,25 +436,25 @@ export const SuperpermissionData = [
     path: '/country',
     subMenuExist: false,
     actions: {
-        view: {
+      view: {
         title: 'view Countrie',
         description: 'with this permission user can see all user.',
-     value: true,
+        value: true,
       },
       remove: {
         title: 'remove Countrie',
         description: 'with this permission user can remove Countrie.',
-    value: true,
+        value: true,
       },
       add: {
         title: 'add Countrie',
         description: 'with this permission user can add Countrie.',
-     value: true,
+        value: true,
       },
       update: {
         title: 'update Countrie',
         description: 'with this permission user can update Countrie.',
-      value: true,
+        value: true,
       },
     },
   },
@@ -465,7 +465,7 @@ export const SuperpermissionData = [
     path: '/PageSection',
     subMenuExist: false,
     actions: {
-       view: {
+      view: {
         title: 'view pages',
         description: 'with this permission user can see all user.',
         value: true,
@@ -516,7 +516,7 @@ export const SuperpermissionData = [
       },
     },
   },
-   {
+  {
     id: 12,
     text: 'Plan Request',
     icon: 'MdReport',
@@ -531,7 +531,7 @@ export const SuperpermissionData = [
           view: {
             title: 'View Pending Plan Requests',
             description: 'Permission to view pending plan change requests',
-            value: true,  
+            value: true,
           },
           approve: {
             title: 'Approve Plan Requests',
@@ -579,7 +579,7 @@ export const SuperpermissionData = [
             title: 'Reject Rejected Requests',
             description: 'Permission to reject previously rejected requests',
             value: true,
-          },  
+          },
         },
 
       },
@@ -604,7 +604,7 @@ export const SuperpermissionData = [
       },
     },
   },
-    {
+  {
     id: 14,
     text: 'Contact Us',
     icon: 'IoPeopleSharp',
@@ -652,11 +652,43 @@ export const SuperpermissionData = [
       },
     },
   },
+
+  {
+    id: 16,
+    text: 'Backup & Import',
+    icon: 'MdBackup',
+    path: '/backup-import',
+    subMenuExist: false,
+    actions: {
+      view: {
+        title: 'view Backup & Import',
+        description: 'with this permission user can view Backup & Import.',
+      },
+    },
+  },
+  {
+    id: 17,
+    text: 'Image Cleaning',
+    icon: 'MdCleaningServices',
+    path: '/image-cleaning',
+    subMenuExist: false,
+    actions: {
+      view: {
+        title: 'view Image Cleaning',
+        description: 'with this permission user can view Image Cleaning.',
+      },
+
+    },
+  },
+
+
 ];
+
+
 
 //
 export const pageIds = {
-dashboard: 1,
+  dashboard: 1,
   RoleManagement: {
     id: 3,
     Role: 3.1,
@@ -698,6 +730,8 @@ dashboard: 1,
   Settings: 13,
   Contact: 14,
   Testimonial: 15,
+  BackupImport: 16,
+  ImageCleaning: 17,
 };
 export const getCurrentPagePermission = (permission, pageId, childId) => {
   const data = permission.find((item) => item.id === pageId);

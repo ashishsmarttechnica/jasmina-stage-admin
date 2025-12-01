@@ -38,13 +38,13 @@ export const permissionData = [
             description: 'with this permission user can see all user.',
           },
           add: {
-         id: 313,
+            id: 313,
             title: 'Create role',
             description:
               "This permission allows role to create new role's in system.",
           },
           remove: {
-              id: 313,
+            id: 313,
             description: 'with this permission role can removw other role.',
             title: 'delete role',
           },
@@ -514,7 +514,7 @@ export const permissionData = [
           reject: {
             title: 'Reject Rejected Requests',
             description: 'Permission to reject previously rejected requests',
-          },  
+          },
         },
 
       },
@@ -578,7 +578,49 @@ export const permissionData = [
         description: 'with this permission user can remove Testimonial.',
       },
     },
-  }
+  },
+  {
+    id: 16,
+    text: 'Backup & Import',
+    icon: 'MdBackup',
+    path: '/backup-import',
+    subMenuExist: false,
+    actions: {
+      view: {
+        title: 'view Backup & Import',
+        description: 'with this permission user can view Backup & Import.',
+      },
+      backup: {
+        title: 'create backup',
+        description: 'with this permission user can create database backup.',
+      },
+      import: {
+        title: 'import backup',
+        description: 'with this permission user can import database backup.',
+      },
+    },
+  },
+  {
+    id: 17,
+    text: 'Image Cleaning',
+    icon: 'MdCleaningServices',
+    path: '/image-cleaning',
+    subMenuExist: false,
+    actions: {
+      view: {
+        title: 'view Image Cleaning',
+        description: 'with this permission user can view Image Cleaning.',
+      },
+      scan: {
+        title: 'scan images',
+        description: 'with this permission user can scan database images.',
+      },
+      delete: {
+        title: 'delete orphan images',
+        description: 'with this permission user can delete orphan images.',
+      },
+    },
+  },
 ];
 //
 export const pageIds = {
@@ -623,6 +665,8 @@ export const pageIds = {
   Settings: 13,
   Contacts: 14,
   Testimonial: 15,
+  BackupImport: 16,
+  ImageCleaning: 17,
 };
 export const getCurrentPagePermission = (permission, pageId, childId) => {
   // console.log(childId, 'permission');
