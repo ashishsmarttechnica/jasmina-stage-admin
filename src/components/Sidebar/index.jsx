@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import SidebarMenu from "./SidebarMenu";
-import MobileIconButton from "./mobileIconButton";
+import MobileIconButton from "./MobileIconButton";
 import useSidebar from "../../hooks/useSidebar";
 
 const Sidebar = () => {
