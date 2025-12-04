@@ -48,7 +48,7 @@ const PostReported = () => {
     field: 'reportedUserId.profile.fullName',
     flex: 1,
     cellRenderer: (params) => {
-      const title = params?.data?.reportedUserId?.profile?.fullName || 'N/A';
+      const title = params?.data?.reportedUserId?.profile?.fullName || params?.data?.reportedUserId?.companyName;
       const searchTerm = search.trim().toLowerCase();
 
       if (searchTerm && title.toLowerCase().includes(searchTerm)) {
@@ -98,7 +98,7 @@ const PostReported = () => {
     field: 'reporterUserId.profile.fullName',
     flex: 1,
     cellRenderer: (params) => {
-      return <div>{params.data?.reporterUserId?.profile?.fullName || 'N/A'}</div>;
+      return <div>{params.data?.reporterUserId?.profile?.fullName || params.data?.reporterUserId?.companyName}</div>;
     },
   },
   {

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import SidebarMenu from "./SidebarMenu";
-import MobileIconButton from "./MobileIconButton";
+import MobileIconButton from "./mobileIconButton";
 import useSidebar from "../../hooks/useSidebar";
 
 const Sidebar = () => {
@@ -19,14 +19,15 @@ const Sidebar = () => {
   return (
     <aside
       ref={sidebar}
-      className={`absolute left-0 top-0 z-1 flex h-screen w-[250px] flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+      className={`absolute left-0 top-0 z-1 flex h-screen w-[250px] flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 ${
+        sidebarOpen ? "translate-x-0" : "-translate-x-full"
+      }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2  pt-4 ">
         <NavLink to="/" className="text-center font-bold w-full ">
           <div className="uppercase text-white text-[29px] tracking-widest">
-            Jasmina
+          Jasmina
 
           </div>
         </NavLink>

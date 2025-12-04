@@ -64,7 +64,7 @@ const useJob = () => {
 
 
   const handleEdit = (item) => {
-    navigate("/PageSection/EditPageSection", { state: item });
+    navigate("/job/edit-job", { state: item });
     // console.log(item,"sdfs");
 
   };

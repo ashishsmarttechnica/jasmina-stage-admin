@@ -1,72 +1,94 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import DefaultLayout from "../../layout/DefaultLayout";
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb";
 import { Button } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
-import useEditSubscription from "../../hooks/Subscription/useEditSubscription";
-import SubsciptionForm from "../../components/Forms/SubscriptionForm";
-import useSubscriptionValidation from "../../hooks/Subscription/useSubscriptionValidation";
+import useEditJob from "../../hooks/Job/useEditJob";
+import JobForm from "../../components/Forms/JobForm";
 
 const EditJob = () => {
-  const { handleEditSubscription, loading } = useEditSubscription();
+  const { handleEditJob, loading } = useEditJob();
   const location = useLocation();
   const data = location.state;
-  const perentId = data._id;
-  
+  const perentId = data?._id;
 
   const navigate = useNavigate();
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
-    title: data?.title || "",
-    price: data?.price || "",
-    eligibility: data?.eligibility || "",
-    isActive: data?.isActive || false,
-    employeeRange: {
-      min: data?.employeeRange?.min || "",
-      max: data?.employeeRange?.max || "",
-    },
+    jobTitle: data?.jobTitle || "",
+    companyId: data?.companyId || "",
+    employeeType: data?.employeeType || "",
+    department: data?.department || "",
+    jobLocation: data?.jobLocation || "",
+    seniorityLevel: data?.seniorityLevel || "",
+    salaryRange: data?.salaryRange || "",
+    workHours: data?.workHours || "",
+    contactNumber: data?.contactNumber || "",
+    education: data?.education || "",
+    experience: data?.experience ?? "",
+    applyVia: data?.applyVia || "",
+    careerWebsite: data?.careerWebsite || "",
+    description: data?.description || "",
+    responsibilities: data?.responsibilities || "",
+    requiredSkills: Array.isArray(data?.requiredSkills)
+      ? data.requiredSkills.join(", ")
+      : data?.requiredSkills || "",
+    requiredLanguages: Array.isArray(data?.requiredLanguages)
+      ? data.requiredLanguages.join(", ")
+      : data?.requiredLanguages || "",
+    deadline: data?.deadline ? data.deadline.slice(0, 10) : "",
+    status: data?.status ?? 1,
   });
 
-  const { validateField } = useSubscriptionValidation(formData, setErrors);
-
   const handleSubmit = (data) => {
-    let validationErrors = {};
-    Object.keys(formData).forEach((key) => {
-      let error = validateField(key, formData[key], formData);
-      if (error) validationErrors[key] = error;
-    });
+    const validationErrors = {};
+    if (!data.jobTitle?.trim()) {
+      validationErrors.jobTitle = "Job title is required";
+    }
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
 
-    handleEditSubscription(perentId, data);
-    setErrors({});
+    const toCommaArray = (value) =>
+      value
+        ? value
+            .split(",")
+            .map((s) => s.trim())
+            .filter(Boolean)
+        : [];
+
+    const payload = {
+      ...data,
+      status: Number(data.status),
+      requiredSkills: toCommaArray(data.requiredSkills),
+      requiredLanguages: toCommaArray(data.requiredLanguages),
+    };
+
+    handleEditJob(perentId, payload);
   };
   return (
     <DefaultLayout>
-      <Breadcrumb pageName="Edit Subscription" />
+      <Breadcrumb pageName="Edit Job" />
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark p-1 table_no_overflow mb-2">
         <header className="flex justify-between items-center px-2">
           <h2 className="font-semibold text-slate-800 dark:text-white"></h2>
           <Button
             variant="contained"
-            onClick={() => navigate("/subscription")}
+            onClick={() => navigate("/job")}
           >
-            View All Subscription
+            View All Job
           </Button>
         </header>
       </div>
       <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-        <SubsciptionForm
+        <JobForm
+          loading={loading}
           formData={formData}
           setFormData={setFormData}
-          onSubmit={handleSubmit} // Pass submit handler
-          isLoading={loading} // Pass loading state
-          errors={errors} // Pass validation errors
-          setErrors={setErrors} // Allow form to update errors
-          isEdit={true}
+          onSubmit={handleSubmit}
+          errors={errors}
         />
       </div>
     </DefaultLayout>

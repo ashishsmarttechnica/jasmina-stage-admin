@@ -16,6 +16,7 @@ const AddCountry = () => {
     country: '',
     isLGBTQ: false
   });
+  
 
   const { validateField } = useCountryValidation(formData, setErrors);
 

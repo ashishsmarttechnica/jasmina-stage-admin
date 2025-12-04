@@ -8,7 +8,7 @@ import "./css/style.css";
 import "./css/satoshi.css";
 import "./css/sweetalert2-dark.css";
 import "./css/sweetalert2-light.css";
-// import "jsvectormap/dist/css/jsvectormap.css"; // CSS file not found in package
+import "jsvectormap/dist/css/jsvectormap.css";
 import "flatpickr/dist/flatpickr.min.css";
 import { Provider } from "react-redux";
 import store from "./redux/store";

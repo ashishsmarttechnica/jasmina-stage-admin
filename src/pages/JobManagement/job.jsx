@@ -32,7 +32,7 @@ const Job = () => {
 handleToggleChange,
     handleDelete,
     handleDiscd,
-    hendleEdit,
+    handleEdit,
     open,
     setOpen,
     MembershipdesData
@@ -72,7 +72,7 @@ console.log(data?.pagination,"pagination");
           handleDelete={handleDelete}
           handleToggleChange={handleToggleChange}
           handleDisc={handleDiscd}
-          hendleEdit={hendleEdit}
+          handleEdit={handleEdit}
           search={search}
           themeMode={themeMode}
           permission={permission}

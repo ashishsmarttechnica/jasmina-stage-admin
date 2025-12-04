@@ -129,7 +129,7 @@ export const UpdateJob = (id, formData) => async (dispatch) => {
 
 
   try {
-    const res = await axiosClient.put(`/update/job?id=${id}`, formData);
+    const res = await axiosClient.put(`/edit/job?jobId=${id}`, formData);
     
 
     if (res.data.success) {

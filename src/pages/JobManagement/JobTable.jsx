@@ -9,7 +9,7 @@ const JobTable = ({
   data,
   loading,
   handleDelete,
-  hendleEdit,
+  handleEdit,
   handleDisc,
   handleToggleChange,
   search,
@@ -86,10 +86,10 @@ const JobTable = ({
           ? [
             {
               headerName: 'VIEW',
-              width: 200,
-              minWidth: 180,
+              // width: 100,
+              // minWidth: 180,
               cellRenderer: (params) => (
-                <div className="flex h-full items-start justify-start gap-4">
+                <div className="flex items-start justify-start gap-4">
                   {permission.view?.value && (
                     <div
                       className="cursor-pointer p-1 bg-primary hover:bg-blue-800 rounded-[4px] hover:scale-105"
@@ -101,6 +101,18 @@ const JobTable = ({
                 </div>
               ),
             },
+            {
+              headerName: 'EDIT',
+              // width: 100,
+              // minWidth: 180, 
+              cellRenderer: (params) => (
+                <div className="flex items-start justify-start gap-4">
+                  <div className="cursor-pointer p-1 bg-primary hover:bg-blue-800 rounded-[4px] hover:scale-105" onClick={() => handleEdit(params.data)}>
+                    <MdEdit className="text-[20px] text-white" />
+                  </div>
+                </div>
+              ),
+            }
           ]
           : []),
   ];

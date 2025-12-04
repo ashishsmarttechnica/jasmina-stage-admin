@@ -18,7 +18,7 @@ const useEditJob = () => {
       const res = await dispatch(UpdateJob(id, formData));
 
       if (res.success) {
-        toast.success("Admin Edit successfully!");
+        toast.success("Job Edit successfully!");
         navigate("/job");
       } else {
         toast.error(res.message);

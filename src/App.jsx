@@ -63,6 +63,7 @@ import AddTestimonial from './pages/Testimonial/AddTestimonial.jsx';
 import EditTestimonial from './pages/Testimonial/EditTestimonial.jsx';
 import BackupImport from './pages/BackupImport/BackupImport.jsx';
 import ImageCleaning from './pages/ImageCleaning/ImageCleaning.jsx';
+import EditJob from './pages/JobManagement/EditJob.jsx';
 
 
 function App() {
@@ -498,6 +499,15 @@ function App() {
             <>
               <PageTitle title="job | Jasmina " />
               <Job />
+            </>
+          }
+        />
+        <Route
+          path="/job/edit-job"
+          element={
+            <>
+              <PageTitle title="job | Jasmina " />
+              <EditJob />
             </>
           }
         />
